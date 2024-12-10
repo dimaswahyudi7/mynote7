@@ -1,0 +1,40 @@
+# Menampilkan semua koneksi jaringan dan port yang terbuka
+netstat -tuln
+
+# Menampilkan semua service yang berjalan
+systemctl list-units --type=service --state=running
+
+# Menemukan file dengan permission 777
+find /path/to/directory -type f -perm 0777
+
+# Menemukan direktori dengan permission 777
+find /path/to/directory -type d -perm 0777
+
+# Menampilkan semua koneksi jaringan dan port yang terbuka
+netstat -tuln
+
+# Menampilkan semua service yang berjalan
+systemctl list-units --type=service --state=running
+
+#Membandingkan isi dua direktori secara rekursif
+diff -r /path/to/directory1 /path/to/directory2
+
+# Membandingkan hash (Linux)
+  #1 Menghasilkan hash MD5
+  md5sum /path/to/file
+
+  #2 Menghasilkan hash SHA-1
+  sha1sum /path/to/file
+
+  #3 Menghasilkan hash SHA-256
+  sha256sum /path/to/file
+
+# Membandingkan hash dari file dalam dua direktori (Linux)
+  #1 Menghasilkan hash dari direktori pertama
+  hashdeep -rl /path/to/directory1 > dir1_hashes.txt
+
+  #2 Menghasilkan hash dari direktori kedua
+  hashdeep -rl /path/to/directory2 > dir2_hashes.txt
+
+  #3 Membandingkan hash dari kedua direktori
+  hashdeep -rl -k dir1_hashes.txt /path/to/directory2
