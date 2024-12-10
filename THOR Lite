@@ -1,0 +1,6 @@
+#Specific Target
+./thor-lite-linux-64 -p /path/to/directory -a Filescan --intense
+
+#Full Target
+./thor-lite-linux-64 -p / -a Filescan --intense
+
